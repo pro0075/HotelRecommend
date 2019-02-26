@@ -236,6 +236,7 @@
     <Content Include="fonts\revicons.eot" />
     <Content Include="fonts\revicons.ttf" />
     <Content Include="fonts\revicons.woff" />
+    <Content Include="main.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="fonts\revicons.svg" />
     <Content Include="images\404.jpg" />
@@ -595,6 +596,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="main.Master.cs">
+      <DependentUpon>main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.Master.designer.cs">
+      <DependentUpon>main.Master</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
