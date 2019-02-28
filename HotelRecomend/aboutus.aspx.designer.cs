@@ -11,7 +11,7 @@ namespace HotelRecomend
 {
 
 
-    public partial class contact
+    public partial class aboutus
     {
     }
 }

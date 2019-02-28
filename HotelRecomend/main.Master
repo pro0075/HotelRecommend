@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+  
     <%--css files--%>
     <title>H-Code | shared on themelock.com</title>
         <meta name="description" content="H-Code - A premium portfolio template from ThemeZaa">
@@ -70,10 +70,10 @@
                         <div class="navbar-collapse collapse">
                             <ul id="accordion" class="nav navbar-nav navbar-right panel-group">
                                 <!-- menu item -->
-                                <li class="dropdown panel"><a href="index.html">Home <i class="fa fa-angle-down"></i></a></li>
-                                <li class="dropdown panel"><a href="about-us.html">About Us <i class="fa fa-angle-down"></i></a></li>
-                                <li class="dropdown panel"><a href="hotels.html">Hotels <i class="fa fa-angle-down"></i></a></li>
-                                <li class="dropdown panel"><a href="contact-us.html">Contact us <i class="fa fa-angle-down"></i></a></li>
+                                <li class="dropdown panel"><a href="index.aspx">Home <i class="fa fa-angle-down"></i></a></li>
+                                <li class="dropdown panel"><a href="aboutus.aspx">About Us <i class="fa fa-angle-down"></i></a></li>
+                                <li class="dropdown panel"><a href="hotels.aspx">Hotels <i class="fa fa-angle-down"></i></a></li>
+                                <li class="dropdown panel"><a href="contact.aspx">Contact us <i class="fa fa-angle-down"></i></a></li>
                                 <!-- end menu item -->
                                 
                             </ul>
