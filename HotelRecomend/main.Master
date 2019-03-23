@@ -50,12 +50,12 @@
 
     <form id="form1" runat="server">
 
-        <!-- navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav nav-white nav-border-bottom" role="navigation">
+       <!--------------------------------------------------------- navbar ----------------------------------------------------------->
+        <nav class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav nav-border-bottom bg-white" role="navigation">
             <div class="container">
                 <div class="row">
                     <!-- logo -->
-                    <div class="col-md-2 pull-left"><a class="logo-light" href="index.html"><img alt="" src="images/logo-white.png" class="logo" /></a><a class="logo-dark" href="index.html"><img alt="" src="images/logo-light.png" class="logo" /></a></div>
+                    <div class="col-md-2 pull-left"><a class="logo-light" href="index.html"><img alt="" src="images/logo-dark.png" class="logo" /></a><a class="logo-dark" href="index.html"><img alt="" src="images/logo-light.png" class="logo" /></a></div>
                     <!-- end logo -->
                     <!-- search and cart  -->
                     
@@ -75,7 +75,6 @@
                                 <li class="dropdown panel"><a href="hotels.aspx">Hotels <i class="fa fa-angle-down"></i></a></li>
                                 <li class="dropdown panel"><a href="contact.aspx">Contact us <i class="fa fa-angle-down"></i></a></li>
                                 <!-- end menu item -->
-                                
                             </ul>
                         </div>
                     </div>
@@ -83,7 +82,7 @@
                 </div>
             </div>
         </nav>
-       
+        <!---------------------------------------------End Navbar---------------------------------------------------------------->
 
 
     <div>
@@ -98,7 +97,8 @@
      
     <%--footer--%>
 
-      <footer>
+      <!--------------------------------------------------FOOTER--------------------------------------------------------------------------->
+    <footer>
             <div class=" bg-white footer-top">
                 <div class="container">
                     <div class="row margin-four">
@@ -212,7 +212,10 @@
             <!-- scroll to top --> 
             <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a> 
             <!-- scroll to top End... --> 
-        </footer>
+    </footer>
+    <!------------------------------------------END FOOTER--------------------------------------------------------------------------->
+
+
         
 
 

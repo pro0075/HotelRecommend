@@ -14,7 +14,7 @@
                         <!-- page title -->
                         <h1 class="black-text">About Company</h1>
                         <!-- end page title -->
-                    </div>
+                    </div>  
                     <div class="col-md-4 col-sm-12 breadcrumb text-uppercase wow fadeInUp xs-display-none" data-wow-duration="600ms">
                     </div>
                 </div>

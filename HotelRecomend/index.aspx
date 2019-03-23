@@ -9,8 +9,8 @@
 
         <%--body starts--%>
 
-
-    <section id="slider" class="no-padding bg-black travel-slider overflow-hidden"> 
+    <!-- --------------------------------------------Slider--------------------------------------------------------------------- -->
+        <section id="slider" class="no-padding bg-black travel-slider overflow-hidden"> 
             <div id="owl-demo-background" class="owl-carousel owl-theme">
                 <div class="item owl-bg-img" style="background-image:url('http://placehold.it/1920x800');"></div>
                 <div class="item owl-bg-img" style="background-image:url('http://placehold.it/1920x800');"></div>
@@ -55,7 +55,7 @@
                                                         <label class="text-uppercase white-text">Where do you want to go?</label>
                                                         <!-- end label -->
                                                         <!-- input -->
-                                                        <input type="text" name="name" id="textbox1" placeholder="Eg. Melbourne, Australia">
+                                                        <input type="text" name="name" id="textbox1" placeholder="Eg. Melbourne, Australia"/>
                                                         <!-- end input -->
                                                     </div>
                                                 </div>
@@ -67,9 +67,7 @@
 
                                                 </div>
 
-                                                
-                                                
-                                            </form>
+                                         </form>
                                         </div>
                                     </div>
                                 </div>
@@ -448,6 +446,7 @@
             </div>
         </section>
 
+        
     <%--body ends--%>
 
 </asp:Content>
