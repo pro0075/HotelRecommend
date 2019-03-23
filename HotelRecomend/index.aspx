@@ -55,7 +55,7 @@
                                                         <label class="text-uppercase white-text">Where do you want to go?</label>
                                                         <!-- end label -->
                                                         <!-- input -->
-                                                        <input type="text" name="name" id="textbox1" placeholder="Eg. Melbourne, Australia"/>
+                                                        <asp:DropDownList ID="ddlcity" AutoPostBack="true" runat="server"></asp:DropDownList>
                                                         <!-- end input -->
                                                     </div>
                                                 </div>

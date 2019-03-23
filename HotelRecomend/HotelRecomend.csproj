@@ -657,6 +657,20 @@
     <Folder Include="App_Data\" />
     <Folder Include="video\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HotelRecomandBAL\HotelRecomandBAL.csproj">
+      <Project>{e8ada60c-513a-4c49-b06b-2ab9460678b8}</Project>
+      <Name>HotelRecomandBAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HotelRecomendDAL\HotelRecomendDAL.csproj">
+      <Project>{92d67061-25ce-4f8b-b0ce-5b98b77becc2}</Project>
+      <Name>HotelRecomendDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HotelRecomendENTITY\HotelRecomendENTITY.csproj">
+      <Project>{f40f95db-14fc-4e81-800e-ac3cf5093c58}</Project>
+      <Name>HotelRecomendENTITY</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
