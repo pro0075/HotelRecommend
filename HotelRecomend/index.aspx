@@ -269,7 +269,7 @@
                                 <!-- tour item -->
                                 <li class="holidays luxury safari">
                                     <figure>
-                                        <div class="gallery-img"><a href="single-project-page1.html"><img src="http://placehold.it/800x500" alt=""></a></div>
+                                        <div class="gallery-img"><a href="single-project-page1.html"><img src="http://placehold.it/800x500" alt=""/></a></div>
                                         <figcaption>
                                             <h3><a href="single-project-page1.html">Best Of Paris</a></h3>
                                             <p>8 Days / 7 Nights - $2500</p>
@@ -281,7 +281,7 @@
                                 <!-- tour item -->
                                 <li class="holidays luxury">
                                     <figure>
-                                        <div class="gallery-img"><a href="single-project-page1.html"><img src="http://placehold.it/800x500" alt=""></a></div>
+                                        <div class="gallery-img"><a href="single-project-page1.html"><img src="http://placehold.it/800x500" alt=""/></a></div>
                                         <figcaption>
                                             <h3><a href="single-project-page1.html">Bangkok Pattaya</a></h3>
                                             <p>2 Days / 3 Nights - $580</p>
@@ -293,7 +293,7 @@
                                 <!-- tour item -->
                                 <li class="honeymoon family safari luxury">
                                     <figure>
-                                        <div class="gallery-img"><a href="single-project-page1.html"><img src="http://placehold.it/800x500" alt=""></a></div>
+                                        <div class="gallery-img"><a href="single-project-page1.html"><img src="http://placehold.it/800x500" alt=""/></a></div>
                                         <figcaption>
                                             <h3><a href="single-project-page1.html">Thailand Special</a></h3>
                                             <p>4 Days / 5 Nights - $1500 (22% Off)</p>
@@ -305,7 +305,7 @@
                                 <!-- tour item -->
                                 <li class="holidays honeymoon luxury">
                                     <figure>
-                                        <div class="gallery-img"><a href="single-project-page1.html"><img src="http://placehold.it/800x500" alt=""></a></div>
+                                        <div class="gallery-img"><a href="single-project-page1.html"><img src="http://placehold.it/800x500" alt=""/></a></div>
                                         <figcaption>
                                             <h3><a href="single-project-page1.html">Australian Getaway</a></h3>
                                             <p>2 Days / 3 Nights - $1500</p>
@@ -317,7 +317,7 @@
                                 <!-- tour item -->
                                 <li class="Safari honeymoon family safari">
                                     <figure>
-                                        <div class="gallery-img"><a href="single-project-page2.html"><img src="http://placehold.it/800x500" alt=""></a></div>
+                                        <div class="gallery-img"><a href="single-project-page2.html"><img src="http://placehold.it/800x500" alt=""/></a></div>
                                         <figcaption>
                                             <h3><a href="single-project-page2.html">Switzerland Winter</a></h3>
                                             <p>5 Days / 6 Nights - $1350 (50% Off)</p>
@@ -329,7 +329,7 @@
                                 <!-- tour item -->
                                 <li class="Safari holidays family">
                                     <figure>
-                                        <div class="gallery-img"><a href="single-project-page3.html"><img src="http://placehold.it/800x500" alt=""></a></div>
+                                        <div class="gallery-img"><a href="single-project-page3.html"><img src="http://placehold.it/800x500" alt=""/></a></div>
                                         <figcaption>
                                             <h3><a href="single-project-page3.html">Singapore City</a></h3>
                                             <p>2 Days / 3 Nights - $950</p>
@@ -341,7 +341,7 @@
                                 <!-- tour item -->
                                 <li class="Safari honeymoon family safari">
                                     <figure>
-                                        <div class="gallery-img"><a href="single-project-page2.html"><img src="http://placehold.it/800x500" alt=""></a></div>
+                                        <div class="gallery-img"><a href="single-project-page2.html"><img src="http://placehold.it/800x500" alt=""/></a></div>
                                         <figcaption>
                                             <h3><a href="single-project-page2.html">Principe Forte Dei Marmi</a></h3>
                                             <p>5 Days / 6 Nights - $1350 (50% Off)</p>
@@ -353,7 +353,7 @@
                                 <!-- tour item -->
                                 <li class="Safari honeymoon family">
                                     <figure>
-                                        <div class="gallery-img"><a href="single-project-page2.html"><img src="http://placehold.it/800x500" alt=""></a></div>
+                                        <div class="gallery-img"><a href="single-project-page2.html"><img src="http://placehold.it/800x500" alt=""/></a></div>
                                         <figcaption>
                                             <h3><a href="single-project-page2.html">South Africa Adventures</a></h3>
                                             <p>5 Days / 6 Nights - $1350 (50% Off)</p>
