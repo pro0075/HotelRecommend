@@ -13,6 +13,8 @@ namespace HotelRecomendDAL
     public class clsHotelRecomendDAL
     {
         SqlConnection objSqlCon = new SqlConnection();
+        
+
         public static DataSet GetCityList(int CityId)
         {
             objSqlCon.ConnectionString = DBHelper.ConnectionString().ToString();
