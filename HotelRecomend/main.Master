@@ -134,10 +134,9 @@
                         <!-- end headline -->
                         <!-- link -->
                         <ul>
-                            <li><a href="about-us.html">About Company</a></li>
-                            <li><a href="about-us.html">What We Do</a></li>
-                            <li><a href="about-us.html">What We Think</a></li>
-                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="About.aspx">About Company</a></li>
+                            <li><a href="About.aspx">What We Do</a></li>
+                            <li><a href="About.aspx">What We Think</a></li>
                         </ul>
                         <!-- end link -->
                     </div>

@@ -1,13 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="HotelRecomend.index" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <%--write css styles here--%>
+    <%--body ends--%>
 </asp:Content>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 
-        <%--body starts--%>
+        <%--body ends--%>
 
     <!-- --------------------------------------------Slider--------------------------------------------------------------------- -->
         <section id="slider" class="no-padding bg-black travel-slider overflow-hidden"> 
@@ -61,8 +61,9 @@
                                                 </div>
                                                 
                                                 <div class="col-md-4 col-sm-6 no-padding-left">
+                                                    <asp:Button ID="btnSearch" runat="server" OnClick="btnSearch_Click" Text="Search" />
                                                 <br/>
-                                                    <button class="highlight-button-dark btn btn-medium  button xs-margin-bottom-five"><i class="fa fa-search"></i>Search</button>
+                                                    
                                                 </div>
 
                                                 </div>
