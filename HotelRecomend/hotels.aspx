@@ -5,36 +5,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 
-
-    <!-- head section -->
-        <section class="page-title parallax3 parallax-fix page-title-large page-title-shop">
-            <div class="opacity-light bg-dark-gray"></div>
-            <img class="parallax-background-img" src="http://placehold.it/1920x1000" alt="" />
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 wow fadeIn">
-                        <!-- page title tagline -->
-                        <span class="text-uppercase white-text">Since 1982 brand</span>
-                        <!-- end title tagline -->
-                        <!-- page title -->
-                        <h1 class="white-text">Collection</h1>
-                        <!-- end page title -->
-                    </div>
-                    <div class="col-md-12 col-sm-12 breadcrumb text-uppercase margin-three no-margin-bottom wow fadeIn">
-                        <!-- breadcrumb -->
-                        <ul>
-                            <li><a class="white-text" href="#">Home</a></li>
-                            <li class="white-text"><a class="white-text" href="#">Shop</a></li>
-                            <li class="white-text">Collection</li>
-                        </ul>
-                        <!-- end breadcrumb -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end head section -->
-
-        <!-- content section -->
+    <!-- content section -->
         <section>
             <div class="container">
                 <div class="row">
@@ -331,6 +302,7 @@
         </section>
         <!-- end content section -->
 
+  
 </asp:Content>
 
 

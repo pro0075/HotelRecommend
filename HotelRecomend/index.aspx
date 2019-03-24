@@ -55,7 +55,7 @@
                                                         <label class="text-uppercase white-text">Where do you want to go?</label>
                                                         <!-- end label -->
                                                         <!-- input -->
-                                                        <asp:DropDownList ID="ddlcity" AutoPostBack="true" runat="server"></asp:DropDownList>
+                                                        <asp:DropDownList ID="ddlcity" AutoPostBack="false" runat="server" OnSelectedIndexChanged="ddlcity_SelectedIndexChanged"></asp:DropDownList>
                                                         <!-- end input -->
                                                     </div>
                                                 </div>
