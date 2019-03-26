@@ -43,9 +43,12 @@ namespace HotelRecomend
                 clsHotelRecomendBAL objUserBAL = new clsHotelRecomendBAL();
                 DataSet InsertData = objUserBAL.InsertUserDetails(objUserEntity);
                 lblmsg.Text = "Data entered Successfully";
-                ClearAll();
-                SendMail();
+        
                 
+                SendMail();
+                ClearAll();
+                Response.Redirect("Login.aspx");
+
             }
             else
             {
@@ -60,8 +63,11 @@ namespace HotelRecomend
 
             MailMessage mMailMessage = new MailMessage();
             //string Email = txtEmailId.Text;
-            mMailMessage.From = new MailAddress("ankeeta.1897@gmail.com");
+            mMailMessage.From = new MailAddress("hotelfinalproject@gmail.com");
+            //mMailMessage.To.Add(new MailAddress(txtEmailId.Text.ToString()));
+
             mMailMessage.To.Add(new MailAddress(txtEmailId.Text.ToString()));
+
             mMailMessage.Subject = "Welcome";
             mMailMessage.Body = "WERTYUIOASDFGHJKLXCVBNM<ASDFGHJKQWERTYUIOQWERTYU";
             mMailMessage.IsBodyHtml = true;
@@ -71,7 +77,7 @@ namespace HotelRecomend
             smtpclt.Host = "smtp.gmail.com";
             smtpclt.Port = 587;
             smtpclt.EnableSsl = true;
-            smtpclt.Credentials = new NetworkCredential("ankeeta.1897@gmail.com", "sandhyagirap");
+            smtpclt.Credentials = new NetworkCredential("hotelfinalproject@gmail.com", "project@123");
             mMailMessage.Priority = MailPriority.High;
             smtpclt.Send(mMailMessage);
 

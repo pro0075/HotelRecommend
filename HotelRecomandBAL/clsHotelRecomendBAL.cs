@@ -28,6 +28,21 @@ namespace HotelRecomandBAL
             }
         }
 
-        
+        public DataSet CheckDetails(clsHotelRecomendENTITY objUserEntity)
+        {
+            clsHotelRecomendDAL objUserDAL = new clsHotelRecomendDAL();
+            try
+            {
+                return objUserDAL.CheckDetails(objUserEntity);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                objUserDAL = null;
+            }
+        }
     }
 }

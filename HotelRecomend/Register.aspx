@@ -53,7 +53,7 @@
                                 <asp:TextBox ID="txtConPassword" class="input-round big-input" runat="server" TextMode="Password"></asp:TextBox>
                                 <!-- end input  -->
                             </div>
-                            <%--<button class="btn highlight-button-dark btn-small btn-round margin-five no-margin-right" type="submit">Register Now</button>--%>
+                          
                             <asp:Button ID="btnRegister" runat="server" Text="Register Now" OnClick="btnRegister_Click" />
                        
                         <asp:Label ID="lblmsg" runat="server" ForeColor="Lime"></asp:Label>

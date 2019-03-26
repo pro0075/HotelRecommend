@@ -49,7 +49,22 @@ namespace HotelRecomendDAL
             return val;
         }
 
-        
+        public DataSet CheckDetails(clsHotelRecomendENTITY objUserEntity)
+        {
+            objSqlCon.ConnectionString = DBHelper.ConnectionString().ToString();
+            SqlParameter[] objSqlParam = new SqlParameter[2];
+
+            objSqlParam[0] = new SqlParameter("@UserName", SqlDbType.VarChar);
+            objSqlParam[0].Direction = ParameterDirection.Input;
+            objSqlParam[0].Value = objUserEntity.UserName;
+
+            objSqlParam[1] = new SqlParameter("@Password", SqlDbType.VarChar);
+            objSqlParam[1].Direction = ParameterDirection.Input;
+            objSqlParam[1].Value = objUserEntity.Password;
+
+            DataSet val = SqlHelper.ExecuteDataset(objSqlCon, CommandType.StoredProcedure, "CheckDetails", objSqlParam);
+            return val;
+        }
 
         public DataSet DuplicateCheck(string email)
         {

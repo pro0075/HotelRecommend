@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" MasterPageFile="~/main.Master" Inherits="HotelRecomend.Login" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <%--<input type="text" name="username" id="txtUserName" class="input-round big-input">--%>
+    <%--<button class="btn highlight-button-dark btn-small btn-round margin-five no-margin-right" type="submit">Login</button>--%>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
@@ -16,8 +16,10 @@
                                 <!-- end label  -->
                                 <!-- input  -->
                                 
-                                <asp:TextBox ID="txtUName" runat="server"></asp:TextBox>
+                                
                                 <!-- end input  -->
+                                <br />
+                                <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
                             </div>
                             <div class="form-group no-margin-bottom">
                                 <!-- label  -->
@@ -25,11 +27,15 @@
                                 <!-- end label  -->
                                 <!-- input  -->
                                 
-                                <asp:TextBox ID="txtPass" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtPassword" runat="server" OnTextChanged="txtPassword_TextChanged" TextMode="Password"></asp:TextBox>
                                 <!-- end input  -->
                             </div>
                             <%--<button class="btn highlight-button-dark btn-small btn-round margin-five no-margin-right" type="submit">Login</button>--%>
-                            <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
+                            
+                            <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click1" Text="Login" />
+                            
+                            <br />
+                            <asp:Label ID="lblmsg" runat="server"></asp:Label>
                             <a href="#" class="display-block text-uppercase">Forgot Password?</a>
                         </form>
                     </div>
