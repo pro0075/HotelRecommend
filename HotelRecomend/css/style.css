@@ -62,7 +62,7 @@ a:hover{ color: #575757; }
 img { -webkit-backface-visibility: hidden; max-width:100%; height:auto; }
 video { background-size: cover; display: table-cell; vertical-align: middle; width: 100%; }
 ul{ margin: 0px; padding:0px; }
-input, textarea, select{ border: 1px solid #dfdfdf; letter-spacing: 1px; font-size: 11px;  padding: 8px 15px; width: 100%; margin: 0 0 20px 0; text-transform: uppercase; max-width: 100%; resize: none;}
+input, textarea, select{ border: 1px solid #dfdfdf; letter-spacing: 1px; font-size: 11px;  padding: 8px 15px; width: 100%; margin: 0 0 20px 0; text-transform: none; max-width: 100%; resize: none;}
 input[type="submit"] { width: auto}
 input[type="button"], input[type="text"], input[type="email"], input[type="search"], input[type="password"], textarea, input[type="submit"] { -webkit-appearance: none;  border-radius: 0; }
 input:focus, textarea:focus{ border: 1px solid #989898; }

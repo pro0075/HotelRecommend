@@ -239,6 +239,7 @@
     <Content Include="fonts\revicons.woff" />
     <Content Include="hotels.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="main.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="fonts\revicons.svg" />
@@ -621,6 +622,13 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="main.Master.cs">
       <DependentUpon>main.Master</DependentUpon>
