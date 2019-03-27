@@ -14,7 +14,7 @@
                                 <!-- label  -->
                                 <label for="username" class="text-uppercase">Username</label>
                                 <!-- end label  -->
-                                <!-- input  -->
+                                
                                 
                                 
                                 <!-- end input  -->
