@@ -23,13 +23,7 @@ namespace HotelRecomend
         clsHotelRecomendBAL objclsHotelRecomendBAL = new clsHotelRecomendBAL();
         clsHotelRecomendDAL objclsHotelRecomendDAL = new clsHotelRecomendDAL();
         clsHotelRecomendENTITY objclsHotelRecomendEntity = new clsHotelRecomendENTITY();
-        //SqlCommand cmd = new SqlCommand();
-        //SqlConnection conn = new SqlConnection();
-        //SqlDataAdapter ada = new SqlDataAdapter();
-        //DataSet ds = new DataSet();
-
-
-      
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             if(!Page.IsPostBack)
@@ -37,10 +31,7 @@ namespace HotelRecomend
 
             }
         }
-
-       
-
-        protected void btnLogin_Click1(object sender, EventArgs e)
+    protected void btnLogin_Click1(object sender, EventArgs e)
         {
             string Output = string.Empty;
             clsHotelRecomendENTITY objUserEntity = new clsHotelRecomendENTITY();
@@ -58,23 +49,12 @@ namespace HotelRecomend
                 lblmsg.Text = "Invalid credentials";
             }
             
+            string val = CheckData.Tables[0].Rows[0]["FirstName"].ToString();
+            Session["UserId"] = CheckData;
             
-            
-           
-            //if (ds.Tables[0].Rows.Count > 0)
-            //{
-            //    lblmsg.Text = "Data is Found ";
 
-            //}
-            //else
-            //{
-            //    lblmsg.Text = "Dta is not Found ";
-            //}
         }
 
-        protected void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

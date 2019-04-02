@@ -76,5 +76,38 @@ namespace HotelRecomendDAL
             DataSet val = SqlHelper.ExecuteDataset(objSqlCon, CommandType.StoredProcedure, "uspDuplicateCheck", objSqlParam);
             return val;
         }
+
+        public DataSet GetRatingHygine(int hygineR)
+        {
+            objSqlCon.ConnectionString = DBHelper.ConnectionString().ToString();
+            SqlParameter[] objSqlParam = new SqlParameter[1];
+            objSqlParam[0] = new SqlParameter("@HygineRating", SqlDbType.Int);
+            objSqlParam[0].Direction = ParameterDirection.Input;
+            objSqlParam[0].Value = hygineR;
+            DataSet val = SqlHelper.ExecuteDataset(objSqlCon, CommandType.StoredProcedure, "InsertHygineRating", objSqlParam);
+            return val;
+        }
+
+        public DataSet GetRatingService(int serviceR)
+        {
+            objSqlCon.ConnectionString = DBHelper.ConnectionString().ToString();
+            SqlParameter[] objSqlParam = new SqlParameter[1];
+            objSqlParam[0] = new SqlParameter("@ServiceRating", SqlDbType.Int);
+            objSqlParam[0].Direction = ParameterDirection.Input;
+            objSqlParam[0].Value = serviceR;
+            DataSet val = SqlHelper.ExecuteDataset(objSqlCon, CommandType.StoredProcedure, "InsertServiceRating", objSqlParam);
+            return val;
+        }
+
+        public DataSet GetRatingQuality(int qualityR)
+        {
+            objSqlCon.ConnectionString = DBHelper.ConnectionString().ToString();
+            SqlParameter[] objSqlParam = new SqlParameter[1];
+            objSqlParam[0] = new SqlParameter("@QualityRating", SqlDbType.Int);
+            objSqlParam[0].Direction = ParameterDirection.Input;
+            objSqlParam[0].Value = qualityR;
+            DataSet val = SqlHelper.ExecuteDataset(objSqlCon, CommandType.StoredProcedure, "InsertQualityRating", objSqlParam);
+            return val;
+        }
     }
 }
