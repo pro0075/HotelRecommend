@@ -58,13 +58,13 @@ namespace HotelRecomend {
         protected global::AjaxControlToolkit.Rating ajxRatingService;
         
         /// <summary>
-        /// Label1 control.
+        /// lblHygine control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblHygine;
         
         /// <summary>
         /// ajxRatingHygine control.
@@ -92,5 +92,32 @@ namespace HotelRecomend {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal Averagerating;
+        
+        /// <summary>
+        /// AverageQualityRating control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal AverageQualityRating;
+        
+        /// <summary>
+        /// AverageServiceRating control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal AverageServiceRating;
+        
+        /// <summary>
+        /// AverageHygineRating control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal AverageHygineRating;
     }
 }

@@ -41,6 +41,7 @@ namespace HotelRecomend
             DataSet CheckData = objUserBAL.CheckDetails(objUserEntity);
             if(CheckData.Tables[0].Rows.Count > 0)
             {
+                Session["UserId"] = CheckData.Tables[0].Rows[0]["UserId"];
                 Response.Redirect("Reviews.aspx");
                 lblmsg.Text = "Done";
             }
@@ -49,8 +50,8 @@ namespace HotelRecomend
                 lblmsg.Text = "Invalid credentials";
             }
             
-            string val = CheckData.Tables[0].Rows[0]["FirstName"].ToString();
-            Session["UserId"] = CheckData;
+            
+            
             
 
         }

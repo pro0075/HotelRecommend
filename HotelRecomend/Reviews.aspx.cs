@@ -33,31 +33,42 @@ namespace HotelRecomend
             try
             {
                 int ratingQtotal=0, ratingStotal=0, ratingHtotal = 0;
-                SqlConnection sqlconn = new SqlConnection("Data Source=AG-KKC;Initial Catalog=DNF;Persist Security Info=True;User ID=sa;Password=sqluser");
-                sqlconn.Open();
-                // calling the stored procedure for getting values from database.
-                SqlCommand cmd = new SqlCommand("getRatings", sqlconn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                if (dt.Rows.Count > 0)
+                //SqlConnection sqlconn = new SqlConnection("Data Source=AG-KKC;Initial Catalog=DNF;Persist Security Info=True;User ID=sa;Password=sqluser");
+                //sqlconn.Open();
+                //// calling the stored procedure for getting values from database.
+                //SqlCommand cmd = new SqlCommand("getRatings", sqlconn);
+                //cmd.Commandsype = Commandsype.StoredProcedure;
+                //SqlDataAdapter da = new SqlDataAdapter(cmd);
+                //DataTable ds = new DataTable();
+                //da.Fill(ds);
+
+                DataSet ds = clsHotelRecomendDAL.GetRatings();
+                if(ds.Tables[0].Rows.Count>0)
                 {
                     // now we will loop through the rows and get the total values submitted by the user.
-                    for (int getrating = 0; getrating < dt.Rows.Count; getrating++)
+                    for (int getrating = 0; getrating < ds.Tables[0].Rows.Count; getrating++)
                     {
-                        ratingHtotal += Convert.ToInt32(dt.Rows[getrating][0].ToString());
-                        ratingStotal += Convert.ToInt32(dt.Rows[getrating][1].ToString());
-                        ratingQtotal += Convert.ToInt32(dt.Rows[getrating][2].ToString());
+                        //ratingHtotal += Convert.ToInt32(ds.Tables[0].Rows[getrating][1].ToString());
+                        //ratingStotal += Convert.ToInt32(ds.Tables[0].Rows[getrating][2].ToString());
+                        //ratingQtotal += Convert.ToInt32(ds.Tables[0].Rows[getrating][3].ToString());
+
+                        ratingHtotal += Convert.ToInt32(ds.Tables[0].Rows[0]["HygineRating"].ToString());
+                        ratingStotal += Convert.ToInt32(ds.Tables[0].Rows[0]["ServiceRating"].ToString());
+                        ratingQtotal += Convert.ToInt32(ds.Tables[0].Rows[0]["QualityRating"].ToString());
+
                     }
+                    int count = ds.Tables[0].Rows.Count;
                     // Over here we will get the average rating by dividing the total rating value by the count of users.
-                    int Qaverage = ratingQtotal / (dt.Rows.Count);
-                    int Saverage = ratingStotal / (dt.Rows.Count);
-                    int Haverage = ratingHtotal / (dt.Rows.Count);
+                    int Qaverage = ratingQtotal / count;
+                    int Saverage = ratingStotal / count;
+                    int Haverage = ratingHtotal / count;
                     //ajxRating.CurrentRating = average;
                     int Average = (Qaverage + Saverage + Haverage) / 3;
-                    xRatedUsersCount.Text = dt.Rows.Count + " " + "users have rated this article";
+                    xRatedUsersCount.Text = count + " " + "users have rated this article";
                     Averagerating.Text = "Average rating for this article is" + " " + Convert.ToString(Average);
+                    AverageQualityRating.Text = "Average rating for Quality is" + " " + Convert.ToString(Qaverage);
+                    AverageServiceRating.Text = "Average rating for Quality is" + " " + Convert.ToString(Saverage);
+                    AverageHygineRating.Text = "Average rating for Quality is" + " " + Convert.ToString(Haverage);
                 }
             }
             catch (Exception ex)
@@ -90,7 +101,7 @@ namespace HotelRecomend
                 //sqlconn.Open();
                 
                 //SqlCommand cmd = new SqlCommand("", sqlconn);
-                //cmd.CommandType = CommandType.StoredProcedure;
+                //cmd.Commandsype = Commandsype.StoredProcedure;
                 
                 //cmd.Parameters.AddWithValue("@RatingValue", SqlDbType.Int).Value = ajxRatingService.CurrentRating;
                 //cmd.ExecuteNonQuery();

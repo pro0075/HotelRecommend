@@ -27,7 +27,7 @@
                                 <!-- end label  -->
                                 <!-- input  -->
                                 
-                                <asp:TextBox ID="txtPassword" runat="server" OnTextChanged="txtPassword_TextChanged" TextMode="Password"></asp:TextBox>
+                                <asp:TextBox ID="txtPassword" runat="server"  TextMode="Password"></asp:TextBox>
                                 <!-- end input  -->
                             </div>
                             <%--<button class="btn highlight-button-dark btn-small btn-round margin-five no-margin-right" type="submit">Login</button>--%>

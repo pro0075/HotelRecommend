@@ -49,6 +49,14 @@ namespace HotelRecomendDAL
             return val;
         }
 
+        public static DataSet GetRatings()
+        {
+            SqlConnection objSqlCon = new SqlConnection();
+            objSqlCon.ConnectionString = DBHelper.ConnectionString().ToString();
+            DataSet val = SqlHelper.ExecuteDataset(objSqlCon, CommandType.StoredProcedure, "GetRatings");
+            return val;
+        }
+
         public DataSet CheckDetails(clsHotelRecomendENTITY objUserEntity)
         {
             objSqlCon.ConnectionString = DBHelper.ConnectionString().ToString();

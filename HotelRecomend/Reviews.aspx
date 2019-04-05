@@ -48,7 +48,7 @@
                 </td>
                 <td>
                     <asp:Rating ID="ajxRatingQuality" AutoPostBack="true"  StarCssClass="starempty" WaitingStarCssClass="starratingSaved"
-                        EmptyStarCssClass="starempty"  MaxRating="5" RatingAlign="Horizontal" FilledStarCssClass="starfilled" runat="server" OnChanged="ajxRatingQuality_Changed">
+                        EmptyStarCssClass="starempty"  MaxRating="5" RatingAlign="Horizontal" FilledStarCssClass="starratingSaved" runat="server" OnChanged="ajxRatingQuality_Changed">
                     </asp:Rating>
                 </td>
             </tr>
@@ -58,17 +58,17 @@
                 </td>
                 <td>
                     <asp:Rating ID="ajxRatingService" AutoPostBack="true"  StarCssClass="starempty" WaitingStarCssClass="starratingSaved"
-                        EmptyStarCssClass="starempty"  MaxRating="5" RatingAlign="Horizontal" FilledStarCssClass="starfilled" runat="server" OnChanged="ajxRatingService_Changed">
+                        EmptyStarCssClass="starempty"  MaxRating="5" RatingAlign="Horizontal" FilledStarCssClass="starratingSaved" runat="server" OnChanged="ajxRatingService_Changed">
                     </asp:Rating>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label1" runat="server" Text="Rate the Service of this hotel:"></asp:Label>
+                    <asp:Label ID="lblHygine" runat="server" Text="Rate the Hygine of this hotel:"></asp:Label>
                 </td>
                 <td>
                     <asp:Rating ID="ajxRatingHygine" AutoPostBack="true" StarCssClass="starempty" MaxRating="5" RatingAlign="Horizontal" WaitingStarCssClass="starratingSaved"
-                         EmptyStarCssClass="starempty" FilledStarCssClass="starfilled" runat="server" OnChanged="ajxRatingHygine_Changed">
+                         EmptyStarCssClass="starempty" FilledStarCssClass="starratingSaved" runat="server" OnChanged="ajxRatingHygine_Changed">
                         </asp:Rating>
                 </td>
             </tr>
@@ -78,7 +78,9 @@
     <br />
     <asp:Literal ID="xRatedUsersCount" runat="server"></asp:Literal> <br />
     <asp:Literal ID="Averagerating" runat="server"></asp:Literal> <br />
-    
+    <asp:Literal ID="AverageQualityRating" runat="server"></asp:Literal><br />
+    <asp:Literal ID="AverageServiceRating" runat="server"></asp:Literal><br />
+    <asp:Literal ID="AverageHygineRating" runat="server"></asp:Literal><br />
     </form>
 </body>
 </html>
