@@ -62,6 +62,7 @@ namespace HotelRecomend
             
 
             MailMessage mMailMessage = new MailMessage();
+            //string strNewPassword = GeneratePassword().ToString();
             //string Email = txtEmailId.Text;
             mMailMessage.From = new MailAddress("hotelfinalproject@gmail.com");
             //mMailMessage.To.Add(new MailAddress(txtEmailId.Text.ToString()));
@@ -69,7 +70,7 @@ namespace HotelRecomend
             mMailMessage.To.Add(new MailAddress(txtEmailId.Text.ToString()));
 
             mMailMessage.Subject = "Welcome";
-            mMailMessage.Body = "WERTYUIOASDFGHJKLXCVBNM<ASDFGHJKQWERTYUIOQWERTYU";
+            mMailMessage.Body = "Your Random password is:" + strNewPassword;
             mMailMessage.IsBodyHtml = true;
 
             SmtpClient smtpclt = new SmtpClient();
@@ -85,6 +86,8 @@ namespace HotelRecomend
             Page.ClientScript.RegisterStartupScript(this.GetType(), "scriptkey", "<script>alert('Your request has been sent successfully');</scriopt>");
             Page.ClientScript.RegisterStartupScript(this.GetType(), "scriptkey", "<script>alert('Email Can not Sent');</script>");
         }
+
+        
 
         private void ClearAll()
         {

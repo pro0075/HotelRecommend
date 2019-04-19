@@ -33,7 +33,7 @@ namespace HotelRecomend
         }
     protected void btnLogin_Click1(object sender, EventArgs e)
         {
-            string Output = string.Empty;
+            
             clsHotelRecomendENTITY objUserEntity = new clsHotelRecomendENTITY();
             objUserEntity.UserName = txtUserName.Text;
             objUserEntity.Password = txtPassword.Text;
@@ -42,8 +42,8 @@ namespace HotelRecomend
             if(CheckData.Tables[0].Rows.Count > 0)
             {
                 Session["UserId"] = CheckData.Tables[0].Rows[0]["UserId"];
-                Response.Redirect("Reviews.aspx");
                 lblmsg.Text = "Done";
+                Response.Redirect("Reviews.aspx");
             }
             else
             {

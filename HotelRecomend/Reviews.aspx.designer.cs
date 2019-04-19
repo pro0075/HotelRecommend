@@ -22,22 +22,22 @@ namespace HotelRecomend {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// lblQuality control.
+        /// lblHygine control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblQuality;
+        protected global::System.Web.UI.WebControls.Label lblHygine;
         
         /// <summary>
-        /// ajxRatingQuality control.
+        /// ajxRatingHygine control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.Rating ajxRatingQuality;
+        protected global::AjaxControlToolkit.Rating ajxRatingHygine;
         
         /// <summary>
         /// lblService control.
@@ -58,22 +58,31 @@ namespace HotelRecomend {
         protected global::AjaxControlToolkit.Rating ajxRatingService;
         
         /// <summary>
-        /// lblHygine control.
+        /// lblQuality control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHygine;
+        protected global::System.Web.UI.WebControls.Label lblQuality;
         
         /// <summary>
-        /// ajxRatingHygine control.
+        /// ajxRatingQuality control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.Rating ajxRatingHygine;
+        protected global::AjaxControlToolkit.Rating ajxRatingQuality;
+        
+        /// <summary>
+        /// btnSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
         
         /// <summary>
         /// xRatedUsersCount control.

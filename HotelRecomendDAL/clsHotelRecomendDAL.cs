@@ -85,37 +85,31 @@ namespace HotelRecomendDAL
             return val;
         }
 
-        public DataSet GetRatingHygine(int hygineR)
+        public DataSet GetRating(int id, int hygineR, int serviceR, int qualityR)
         {
             objSqlCon.ConnectionString = DBHelper.ConnectionString().ToString();
-            SqlParameter[] objSqlParam = new SqlParameter[1];
-            objSqlParam[0] = new SqlParameter("@HygineRating", SqlDbType.Int);
+            SqlParameter[] objSqlParam = new SqlParameter[4];
+
+            objSqlParam[0] = new SqlParameter("@id", SqlDbType.Int);
             objSqlParam[0].Direction = ParameterDirection.Input;
-            objSqlParam[0].Value = hygineR;
-            DataSet val = SqlHelper.ExecuteDataset(objSqlCon, CommandType.StoredProcedure, "InsertHygineRating", objSqlParam);
+            objSqlParam[0].Value = id;
+
+            objSqlParam[1] = new SqlParameter("@HygineRating", SqlDbType.Int);
+            objSqlParam[1].Direction = ParameterDirection.Input;
+            objSqlParam[1].Value = hygineR;
+
+            objSqlParam[2] = new SqlParameter("@ServiceRating", SqlDbType.Int);
+            objSqlParam[2].Direction = ParameterDirection.Input;
+            objSqlParam[2].Value = serviceR;
+
+            objSqlParam[3] = new SqlParameter("@QualityRating", SqlDbType.Int);
+            objSqlParam[3].Direction = ParameterDirection.Input;
+            objSqlParam[3].Value = qualityR;
+
+            DataSet val = SqlHelper.ExecuteDataset(objSqlCon, CommandType.StoredProcedure, "InsertRatings", objSqlParam);
             return val;
         }
 
-        public DataSet GetRatingService(int serviceR)
-        {
-            objSqlCon.ConnectionString = DBHelper.ConnectionString().ToString();
-            SqlParameter[] objSqlParam = new SqlParameter[1];
-            objSqlParam[0] = new SqlParameter("@ServiceRating", SqlDbType.Int);
-            objSqlParam[0].Direction = ParameterDirection.Input;
-            objSqlParam[0].Value = serviceR;
-            DataSet val = SqlHelper.ExecuteDataset(objSqlCon, CommandType.StoredProcedure, "InsertServiceRating", objSqlParam);
-            return val;
-        }
-
-        public DataSet GetRatingQuality(int qualityR)
-        {
-            objSqlCon.ConnectionString = DBHelper.ConnectionString().ToString();
-            SqlParameter[] objSqlParam = new SqlParameter[1];
-            objSqlParam[0] = new SqlParameter("@QualityRating", SqlDbType.Int);
-            objSqlParam[0].Direction = ParameterDirection.Input;
-            objSqlParam[0].Value = qualityR;
-            DataSet val = SqlHelper.ExecuteDataset(objSqlCon, CommandType.StoredProcedure, "InsertQualityRating", objSqlParam);
-            return val;
-        }
+        
     }
 }
